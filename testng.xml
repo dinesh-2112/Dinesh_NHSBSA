@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="NHSCostInfo" parallel="tests" thread-count="2">
+
+    <test name="Test_Chrome">
+        <parameter name="browser" value="Chrome"/>
+        <classes>
+            <class name="Runner.TestRunner"/>
+        </classes>
+    </test>
+
+    <test name="Test_Firefox">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="Runner.TestRunner"/>
+        </classes>
+    </test>
+</suite>
+
